@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+button {
+    border-radius: 2px;
+    background: #E3B873;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-family: "Nunito Sans";
+    font-style: italic;
+}
+
+.phone {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
+.header-btn {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    padding: 13px 33px;
+}
+
+.main-btn {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    margin-right: 20px;
+    padding: 19px 42px;
+}
+
+.btn-alt {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 18px 22px;
+}
+
+.title {
+    margin: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.input {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans";
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1438px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+header {
+    background-color: black;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+}
+
+.header-menu__item {
+    margin-right: 47px;
+}
+
+.header-menu__item a {
+    text-decoration: none;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+a:hover {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    color: #E3B873;
+}
+
+.hero {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    height: 707px;
+    position: relative;
+}
+
+.hero-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.hero-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 194px;
+    padding-left: 34px;
+    Width: 676px;
+    Height: 105px;
+    margin: 0;
+}
+
+.hero-text {
+    Width: 504px;
+    height: 105px;
+    font-family: Nunito Sans;
+    z-index: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 19px;
+}
+
+.btn-wrapper {
+    margin-top: 41px;
+}
+
+.yelow-text {
+    color: #E3B873;
+}
