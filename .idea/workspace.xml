@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2920f27d-9a31-4578-be34-e120374db1cb" name="Default Changelist" comment="" />
+    <list default="true" id="2920f27d-9a31-4578-be34-e120374db1cb" name="Default Changelist" comment="Step 2 50%">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/s2_img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lbr0o0TpYdjFFHGdRtPDyTcwKu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,11 +34,18 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WS_projects\Landing_page\images" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,17 +62,45 @@
       <workItem from="1608041337617" duration="2722000" />
       <workItem from="1608057705848" duration="3130000" />
       <workItem from="1608104621827" duration="8000" />
-      <workItem from="1608105924085" duration="2778000" />
+      <workItem from="1608105924085" duration="4044000" />
+      <workItem from="1608119117115" duration="17000" />
+      <workItem from="1608119771836" duration="64000" />
+      <workItem from="1608212289712" duration="933000" />
+      <workItem from="1608550454434" duration="42000" />
+      <workItem from="1608550508532" duration="467000" />
+      <workItem from="1608550989276" duration="568000" />
+      <workItem from="1608551569390" duration="304000" />
+      <workItem from="1608552249454" duration="3261000" />
+      <workItem from="1608556248193" duration="323000" />
+      <workItem from="1608556639371" duration="109000" />
+      <workItem from="1608556819211" duration="573000" />
+      <workItem from="1608557414295" duration="24166000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Step 2 50%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 2 50%" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1608583861837">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608583861837" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1607876975054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607876975054" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608583523865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608583523865" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608583704278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608583704278" />
   </component>
 </project>

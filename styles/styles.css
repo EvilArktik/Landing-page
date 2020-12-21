@@ -1,3 +1,4 @@
+/*General styles*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 button {
@@ -6,12 +7,12 @@ button {
     outline: 0;
     border: 0;
     color: white;
-    font-family: "Nunito Sans";
+    font-family: "Nunito Sans", serif;
     font-style: italic;
 }
 
 .phone {
-    font-family: Nunito Sans;
+    font-family: "Nunito Sans", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -21,13 +22,103 @@ button {
     color: #E3B873;
 }
 
+.title {
+    margin: 0;
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.input {
+    font-family: "Nunito Sans", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.wrapper {
+    width: 1438px;
+    margin: 0 auto;
+}
+
+.yelow-text {
+    color: #E3B873;
+}
+
+/* Header styles */
+
 .header-btn {
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
     padding: 13px 33px;
 }
 
+.logo {
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+header, .block2 {
+    background-color: #131313;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-around;
+    height: 83px;
+    align-items: center;
+}
+
+.header-menu, .block2__img-wrapper__menu {
+    list-style: none;
+    display: flex;
+}
+
+.header-menu__item {
+    margin-right: 47px;
+}
+
+.header-menu__item a {
+    text-decoration: none;
+    font-family: "Nunito Sans", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+/* Buttons */
+
 .main-btn {
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
     margin-right: 20px;
     padding: 19px 42px;
 }
@@ -39,94 +130,11 @@ button {
     padding: 18px 22px;
 }
 
-.title {
-    margin: 0;
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+.btn-wrapper {
+    margin-top: 41px;
 }
 
-.subtitle {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #181818;
-}
-
-.input {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    color: #363636;
-}
-
-body {
-    margin: 0;
-    font-family: "Nunito Sans";
-    box-sizing: border-box;
-}
-
-.wrapper {
-    width: 1438px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 11px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #E3B873;
-}
-
-header {
-    background-color: black;
-}
-
-.header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    height: 83px;
-    align-items: center;
-}
-
-.header-menu {
-    list-style: none;
-    display: flex;
-}
-
-.header-menu__item {
-    margin-right: 47px;
-}
-
-.header-menu__item a {
-    text-decoration: none;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    color: #FFFFFF;
-}
-
-a:hover {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: right;
-    color: #E3B873;
-}
+/* Section 1 (hero) */
 
 .hero {
     background-image: url("../images/hero.jpg");
@@ -149,7 +157,7 @@ a:hover {
     position: relative;
     z-index: 1;
     padding-top: 194px;
-    padding-left: 34px;
+    padding-left: 35px;
     Width: 676px;
     Height: 105px;
     margin: 0;
@@ -158,7 +166,7 @@ a:hover {
 .hero-text {
     Width: 504px;
     height: 105px;
-    font-family: Nunito Sans;
+    font-family: "Nunito Sans", serif;
     z-index: 1;
     font-style: normal;
     font-weight: normal;
@@ -168,10 +176,108 @@ a:hover {
     margin-top: 19px;
 }
 
-.btn-wrapper {
-    margin-top: 41px;
+/* Section 2*/
+
+.block2__wrapper {
+    display: flex;
+    width: 1171px;
+    height: 552px;
+    padding-top: 107px;
+    margin: 0 auto;
 }
 
-.yelow-text {
+/* Section 2 - text-block */
+
+.block2__title {
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.block2__main-text {
+    font-family: "Nunito Sans", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+}
+
+.block2__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.block2__text-wrapper__blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block2__text-wrapper__blocks-item {
+    width: 50%;
+    margin-bottom: 34px;
+}
+
+.block2__text-wrapper__blocks-header {
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.block2__text-wrapper__blocks-text {
+    font-family: "Nunito Sans", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/* Section 2 img-block */
+
+.block2__img-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.block2__img-wrapper__menu {
+    justify-content: space-between;
+    margin-bottom: 53px;
+}
+
+.block2__img-wrapper__img {
+    width: 679px;
+    height: 482px;
+}
+
+.block2__img-wrapper__menu-item a {
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.block2__img-wrapper__menu-item a:hover {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #E3B873;
+}
+
+a:hover {
     color: #E3B873;
+    cursor: pointer;
 }
