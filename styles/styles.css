@@ -364,16 +364,19 @@ header, .block2 {
 .icon {
     font-size: 33px;
     color: #E3B873;
+    margin: 0 auto;
     text-align: center;
 }
 
 .icon-camera::before {
+    content: "";
     background: #E3B873;
     width: 32px;
     height: 1px;
 }
 
-.icon-camera::after {
+.icon::after {
+    content: "";
     background: #E3B873;
     width: 32px;
     height: 1px;
