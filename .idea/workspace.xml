@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2920f27d-9a31-4578-be34-e120374db1cb" name="Default Changelist" comment="Step 2 camera bug">
-      <change afterPath="$PROJECT_DIR$/images/ribbon.svg" afterDir="false" />
+    <list default="true" id="2920f27d-9a31-4578-be34-e120374db1cb" name="Default Changelist" comment="step2_80%">
+      <change afterPath="$PROJECT_DIR$/images/devide.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/play.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
+    </list>
+    <list id="849f072b-48fc-453b-b28f-9f1025d58a0a" name="Revert &quot;Step 2 camera bug&quot;" comment="Revert &quot;Step 2 camera bug&quot;&#10;                            &#10;                            This reverts commit d1731064">
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,24 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/styles/styles.css">
+      <ranges>
+        <range start1="36" end1="37" start2="36" end2="36" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="79" end1="79" start2="78" end2="79" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="100" end1="101" start2="100" end2="101" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="120" end1="120" start2="120" end2="121" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="163" end1="165" start2="164" end2="166" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="173" end1="173" start2="174" end2="175" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="353" end1="353" start2="355" end2="358" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="363" end1="363" start2="368" end2="379" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="366" end1="373" start2="382" end2="382" changelist="849f072b-48fc-453b-b28f-9f1025d58a0a" />
+        <range start1="374" end1="381" start2="383" end2="383" changelist="849f072b-48fc-453b-b28f-9f1025d58a0a" />
+        <range start1="388" end1="388" start2="390" end2="391" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+        <range start1="399" end1="399" start2="402" end2="429" changelist="2920f27d-9a31-4578-be34-e120374db1cb" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1lbr0o0TpYdjFFHGdRtPDyTcwKu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,10 +65,10 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\WS_projects\Landing_page\images" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\WS_projects\Landing_page\images" />
     </key>
   </component>
@@ -76,7 +100,10 @@
       <workItem from="1608556639371" duration="109000" />
       <workItem from="1608556819211" duration="573000" />
       <workItem from="1608557414295" duration="24175000" />
-      <workItem from="1608615338727" duration="24997000" />
+      <workItem from="1608615338727" duration="26422000" />
+      <workItem from="1608734320842" duration="167000" />
+      <workItem from="1608883438485" duration="16949000" />
+      <workItem from="1608920430067" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="Step 2 50%">
       <created>1608584004086</created>
@@ -92,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608669332188</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Step 2 camera bug">
+      <created>1608669580885</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608669580885</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,21 +145,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Step 2 50%" />
     <MESSAGE value="Step 2 camera bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 2 camera bug" />
+    <MESSAGE value="step2_80%" />
+    <option name="LAST_COMMIT_MESSAGE" value="step2_80%" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Inspections" timestamp="1608657674237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1608657674237" />
-    <state x="361" y="71" key="#Notifications" timestamp="1608669430661">
+    <state x="361" y="71" key="#Notifications" timestamp="1608669632669">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1608669430661" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1608669518226">
+    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1608669632669" />
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1608920629171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608669518226" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608920629171" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1608669574738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -138,14 +173,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607876975054" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608669344163">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608669597411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608669344163" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608583523865">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608669597411" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608669736087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608583523865" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608669736087" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608661019732">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

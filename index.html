@@ -12,7 +12,7 @@
 <header class="header">
     <div class="wrapper header-wrapper">
         <div class="logo">
-            IC Repair Design Project
+            IC "Repair Design Project"
         </div>
         <nav>
             <ul class="header-menu">
@@ -98,15 +98,37 @@
     <section class="wrapper block3">
         <div class="block3__wrapper">
             <p class="subtitle block3_subtitle">online control</p>
-            <div class="icon icon-camera"></div>
+            <div class="camera-holder">
+                <span class="ribbon"><img src="images/ribbon.svg"></span>
+                <span class="icon icon-camera"></span>
+                <span class="ribbon"><img src="images/ribbon.svg"></span>
+            </div>
             <div class="block3__video-wrapper">
                 <div class="block3__video-overlay"></div>
-                <img class="play-button" src="images/play.svg" alt="play button">
+                <button class="main-btn play-button">
+                    <img class="play-button__img" src="images/play.svg" alt="play button">
+                </button>
             </div>
-            <p>At each facility, a camera is installed that broadcasts the progress of work on the <br>clock. At any
+            <img src="images/devide.svg" alt="devide line">
+            <p class="block3__text">At each facility, a camera is installed that broadcasts the progress of work on the <br>clock. At any
                 time, you can go to our website and monitor the progress of work in <br>your apartment. You can watch the
                 live broadcast from one of our facilities!<br>
                 Leave a request below and you will receive a link to the broadcast.</p>
+            <div class="block3__input">
+                <p>Name:<br>
+                    <input type="text" placeholder="What is your name:">
+                </p>
+                <p>Name<br>
+                    <input type="text" placeholder="What is your name:">
+                </p>
+                <p>Phone<br>
+                    <input type="text" placeholder="Your phone number:">
+                </p>
+                <p><input class="main-btn block3__submit" type="submit" value="submit"></p>
+            </div>
+            <div class="wrapper block3__checkbox-wrapper">
+                <input class="block3__checkbox" type="checkbox">
+            </div>
         </div>
     </section>
 </main>
