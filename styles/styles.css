@@ -367,14 +367,14 @@ header, .block2 {
     color: #FFFFFF;
 }
 
-.camera-holder {
+.icon-holder {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 32px;
 }
 
-.camera-holder::before {
+.icon-holder::before {
     content: "";
     box-sizing: border-box;
     background: #E3B873;
@@ -383,7 +383,7 @@ header, .block2 {
     margin-right: 10px;
 }
 
-.camera-holder::after {
+.icon-holder::after {
     content: "";
     box-sizing: border-box;
     background: #E3B873;
@@ -446,4 +446,11 @@ header, .block2 {
     color: #FFFFFF;
     border: 0;
     cursor: pointer;
+}
+
+/* Block 4  */
+
+.icon-repair {
+    font-size: 33px;
+    color: #E3B873;
 }
