@@ -30,8 +30,8 @@
     </div>
 </header>
 <main class="main">
-    <!--  Section 1  -->
-    <section class="wrapper hero">
+    <!--  section 1  -->
+    <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-wrapper wrapper">
             <h1 class="title">Turnkey Repair in the city of <span class="yelow-text">Rostov-on-Don</span></h1>
@@ -44,21 +44,23 @@
             </div>
         </div>
     </section>
-    <!--  Section 2  -->
+    <!--  section 2  -->
     <section class="wrapper block2">
         <div class="block2__wrapper">
-            <!--      Left side      -->
+            <!--      left side      -->
             <div class="block2__text-wrapper">
-                <h3 class="block2__title yelow-text">Completed <br>projects</h3>
+                <h3 class="block2__title yelow-text">Completed<br>projects</h3>
                 <p class="block2__main-text">Only a small part of the work performed by our company is presented on
                     the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                 <!--    mobile slider   -->
-                <div class="block2__mobile-slider__wrapper is_mobile">
-                    <img class="block2__mobile-slider" src="images/block2_mobile-slider.png" alt="room renew">
+                <div class="mobile-slider__wrapper is_mobile">
+                    <img class="mobile-slider" src="images/block2_mobile-slider.png" alt="room renew">
                     <div class="mobile-slider__buttons">
-                        <button class="mobile-slider__buttons-item"><img src="images/slide_left.svg" alt="slide left">
+                        <button class="mobile-slider__buttons-item">
+                            <img src="images/slide_left.svg" alt="slide left">
                         </button>
-                        <button class="mobile-slider__buttons-item"><img src="images/slide_right.svg" alt="slide right">
+                        <button class="mobile-slider__buttons-item">
+                            <img src="images/slide_right.svg" alt="slide right">
                         </button>
                     </div>
                 </div>
@@ -89,7 +91,7 @@
                     <span class="block2__nav-arrow icon-arrow-right"></span>
                 </div>
             </div>
-            <!--       Right side     -->
+            <!--       right side     -->
             <div class="block2__img-wrapper is_desktop">
                 <ul class="block2__img-wrapper__menu is_desktop">
                     <li class="block2__img-wrapper__menu-item"><a href="#">Rostov-on-Don, Admiral</a></li>
@@ -102,7 +104,7 @@
             </div>
         </div>
     </section>
-    <!--  Section 3  -->
+    <!--  section 3  -->
     <section class="block3">
         <div class="wrapper block3__wrapper">
             <p class="subtitle block3_subtitle">online control</p>
@@ -121,26 +123,27 @@
                 clock. At any time, you can go to our website and monitor the progress of work in your apartment. You
                 can watch the live broadcast from one of our facilities!
                 Leave a request below and you will receive a link to the broadcast.</p>
-            <!--     Form 1     -->
-            <div class="block3__input">
-                <p class="block3__input-item">Name<br>
-                    <input type="text" placeholder="What is your name:">
-                <p class="block3__input-item">Phone<br>
-                    <input type="text" placeholder="Your phone number:">
-                </p>
-                <p><input class="btn-main block3__submit is_desktop" type="submit" value="submit"></p>
-            </div>
-            <div class="block3__checkbox-wrapper">
+            <!--     form 1     -->
+            <form action="#" class="form1">
+                <label for="form1-name" class="form-item form1-item">Name<br>
+                    <input id="form1-name" type="text" placeholder="What is your name:">
+                </label>
+                <label for="form1-tel" class="form-item form1-item">Phone<br>
+                    <input id="form1-tel" type="text" placeholder="Your phone number:">
+                </label>
+                <input class="btn-main form1-submit is_desktop" type="submit" value="submit">
+            </form>
+            <div class="checkbox-wrapper">
                 <label class="label">
                     <input id="checkbox1" type="checkbox">
                     <span class="fake-checkbox"></span>
-                    <span class="input">I agree to the processing of personal data</span>
+                    <span class="checkbox form1-checkbox">I agree to the processing of personal data</span>
                 </label>
             </div>
-            <p><input class="btn-main block3__submit is_mobile" type="submit" value="submit"></p>
+            <input class="btn-main form1-submit is_mobile" type="submit" value="submit">
         </div>
     </section>
-    <!--    Section 4    -->
+    <!--    section 4    -->
     <section class="wrapper block4">
         <h2 class="subtitle">TYPES OF REPAIR</h2>
         <div class="icon-holder">
@@ -197,9 +200,222 @@
             </div>
         </div>
     </section>
+    <!--  section 5  -->
+    <section class="wrapper block5 is_desktop">
+        <div class="block5__pros">
+            <div class="block5__pros-item">
+                <span class="block5__pros-number">01</span>
+                <p class="block5__pros-text">Our specialist will arrive for measurements per day
+                    contact, or appoint a date convenient for you</p>
+            </div>
+            <div class="block5__pros-item">
+                <span class="block5__pros-number">02</span>
+                <p class="block5__pros-text">Free metering</p>
+            </div>
+            <div class="block5__pros-item">
+                <span class="block5__pros-number">03</span>
+                <p class="block5__pros-text">Free consultation</p>
+            </div>
+            <div class="block5__pros-item">
+                <span class="block5__pros-number">04</span>
+                <p class="block5__pros-text">Get a cost estimate and
+                    the timing of your future repairs</p>
+            </div>
+        </div>
+        <!--    form 2    -->
+        <div class="form2-wrapper">
+            <form class="form2" action="#">
+                <p class="form2-header">Leave a request for free<br>departure of the measurer</p>
+                <label for="form2-name" class="form-item form2-item">Name<br>
+                    <input id="form2-name" type="text" placeholder="What is your name:">
+                </label>
+                <label for="form2-tel" class="form-item form2-item">Phone<br>
+                    <input id="form2-tel" type="text" placeholder="Your phone number:">
+                </label>
+                <label for="form2-mail" class="form-item form2-item">Email<br>
+                    <input id="form2-mail" type="text" placeholder="Your Email">
+                </label>
+                <label class="label form2-checkbox">
+                    <input id="checkbox2" type="checkbox">
+                    <span class="fake-checkbox"></span>
+                    <span class="checkbox">I agree to the processing of personal data</span>
+                </label>
+                <input class="btn-main form2-submit" type="submit" value="Call the measurer">
+            </form>
+            <div class="piggy-holder">
+                <span class="piggy icon-money_pig"></span>
+                <p>Help save 10 - 20% of the cost of materials</p>
+            </div>
+        </div>
+    </section>
+    <!--  section 6  -->
+    <section class="wrapper block6 is_desktop">
+        <div class="gallery-overlay"></div>
+        <div class="wrapper gallery__wrapper">
+            <div class="gallery__menu-wrapper">
+                <h5 class="gallery__header">We realize your wildest fantasies</h5>
+                <ul class="gallery__menu">
+                    <li class="gallery__menu-item"><a href="#">American classic</a></li>
+                    <li class="gallery__menu-item"><a href="#">Empire</a></li>
+                    <li class="gallery__menu-item"><a href="#">Classical</a></li>
+                    <li class="gallery__menu-item"><a href="#">Loft</a></li>
+                    <li class="gallery__menu-item"><a href="#">Provence</a></li>
+                    <li class="gallery__menu-item"><a href="#">Romanticism</a></li>
+                    <li class="gallery__menu-item"><a href="#">Scandinavian style</a></li>
+                    <li class="gallery__menu-item"><a href="#">Mediterranean style</a></li>
+                    <li class="gallery__menu-item"><a href="#">High tech</a></li>
+                    <li class="gallery__menu-item"><a href="#">Eclecticism</a></li>
+                </ul>
+            </div>
+            <div class="gallery__pic-wrapper">
+                <div class="pics1-2">
+                    <img class="gallery__pic1" src="./images/gallery_pic1.jpg" alt="picture1">
+                    <img class="gallery__pic2" src="./images/gallery_pic2.jpg" alt="picture2">
+                </div>
+                <div class="pics3-4">
+                    <img class="gallery__pic3" src="./images/gallery_pic3.jpg" alt="picture3">
+                    <img class="gallery__pic4" src="./images/gallery_pic4.jpg" alt="picture4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mobile section 6  -->
+    <section class="wrapper block6__mobile is_mobile">
+        <h3 class="block6__mobile-title yelow-text">We realize your wildest fantasies</h3>
+        <div class="mobile-slider__wrapper is_mobile">
+            <img class="mobile-slider" src="./images/block6__mobile-slider.jpg" alt="room renew">
+            <div class="mobile-slider__buttons">
+                <button class="mobile-slider__buttons-item">
+                    <img src="images/slide_left.svg" alt="slide left">
+                </button>
+                <button class="mobile-slider__buttons-item">
+                    <img src="images/slide_right.svg" alt="slide right">
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--  section 7  -->
+    <section class="wrapper block7 is_desktop">
+        <h2 class="subtitle">our clients</h2>
+        <div class="icon-holder">
+            <span class="icon icon-handshake"></span>
+        </div>
+        <p class="block7__text">80% of our customers recommend us to their friends and family.</p>
+        <div class="block7__clients-wrapper">
+            <div class="block7__clients-item">
+                <div class="client-name">
+                    <img class="client-img" src="./images/client_img1.jpg" alt="client photo">
+                    <p>Fedosova Maria Konstantinovna</p>
+                </div>
+                <p class="client-review">I want to thank the guys for their work. We put your shower part in
+                    repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the
+                    project
+                    to Georgia for its professionalism and approach.
+                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional.
+                    Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend
+                    these masters.</p>
+                <div class="info mesure-text">
+                    <img class="mesure-icon" src="./images/square_icon.svg">40 M2
+                    <div class="mesure-separator"></div>
+                    <img class="mesure-icon" src="./images/calendar_icon.svg">48 days
+                </div>
+            </div>
+            <div class="block7__clients-item">
+                <div class="client-name">
+                    <img class="client-img" src="./images/client_img2.jpg" alt="client photo">
+                    <p>Afanasyev Sergey Alexandrovich</p></div>
+                <p class="client-review">I want to thank the guys for their work. We put your shower part in
+                    repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the
+                    project
+                    to Georgia for its professionalism and approach.
+                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional.
+                    Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend
+                    these masters.</p>
+                <div class="info mesure-text">
+                    <img class="mesure-icon" src="./images/square_icon.svg">90 M2
+                    <div class="mesure-separator"></div>
+                    <img class="mesure-icon" src="./images/calendar_icon.svg">128 days
+                </div>
+            </div>
+            <div class="block7__clients-item">
+                <div class="client-name">
+                    <img class="client-img" src="./images/client_img3.jpg" alt="client photo">
+                    <p>Kiriev Egor Leonidovich</p></div>
+                <p class="client-review">I want to thank the guys for their work. We put your shower part in
+                    repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the
+                    project
+                    to Georgia for its professionalism and approach.
+                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional.
+                    Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend
+                    these masters.</p>
+                <div class="info mesure-text">
+                    <img class="mesure-icon" src="./images/square_icon.svg">56 M2
+                    <div class="mesure-separator"></div>
+                    <img class="mesure-icon" src="./images/calendar_icon.svg">86 days
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  section 8  -->
+    <section class="wrapper block8">
+        <div class="block8__wrapper">
+            <form class="form3" action="#">
+                <p class="form3-header">have any questions?</p>
+                <div class="form3-wrapper">
+                    <label for="form3-name" class="form-item form3-item">Name<br>
+                        <input id="form3-name" type="text" placeholder="What is your name:">
+                    </label>
+                    <label for="form3-phone" class="form-item form3-item">Phone<br>
+                        <input id="form3-phone" type="text" placeholder="Your phone number:">
+                    </label>
+                    <label for="form3-question" class="form-item form3-item">Question<br>
+                        <input id="form3-question" type="text" placeholder="I want to know:">
+                    </label>
+                    <label class="label form3-checkbox">
+                        <input id="checkbox3" type="checkbox">
+                        <span class="fake-checkbox"></span>
+                        <span class="checkbox">I agree to the processing of personal data</span>
+                    </label>
+                </div>
+            </form>
+            <iframe class="block8__map__mobile is_mobile"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10832.1497946293!2d39.7314794!3d47.254971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sth!4v1610467982559!5m2!1sru!2sth"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+            <h2 class="block8__title yelow-text">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel
+                +7 (928) 768 32 29</h2>
+            <div class="icons-holder">
+                <span class="icon-mail"><a href="mailto:#@blabla.com"><img src="./images/icon-mail.svg"></a>
+                </span>
+                <span class="icon-instagram"><a rel="nofollow" target="_blank" href="#"><img
+                        src="./images/icon-instagram.svg"></a>
+                </span>
+            </div>
+            <iframe class="block8__map is_desktop"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10832.1497946293!2d39.7314794!3d47.254971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sth!4v1610467982559!5m2!1sru!2sth"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+    </section>
 </main>
 <footer>
-
+    <div class="footer wrapper is_desktop">
+        <div class="logo">
+            IC "Repair Design Project"
+        </div>
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#">HOME</a></li>
+                <li class="header__menu-item"><a href="#">PROJECTS</a></li>
+                <li class="header__menu-item"><a href="#">MEASUREMENT</a></li>
+                <li class="header__menu-item"><a href="#">TEAM</a></li>
+                <li class="header__menu-item"><a href="#">REVIEWS</a></li>
+                <li class="header__menu-item"><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <a class="phone" href=tel:+79287683239>+7 (928) 768-32-39</a>
+        <button class="btn-header">Request a call</button>
+    </div>
 </footer>
 </body>
 </html>
