@@ -199,7 +199,7 @@ header, .block2, footer {
 .header {
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-wrapper {
@@ -1092,6 +1092,7 @@ header, .block2, footer {
     .mobile-slider {
         max-width: 100%;
         position: relative;
+        z-index: 1;
     }
 
     .mobile-slider__buttons {
@@ -1101,7 +1102,7 @@ header, .block2, footer {
         justify-content: space-between;
         position: absolute;
         top: 42%;
-        z-index: 1;
+        z-index: 2;
         padding: 0 10%;
     }
 
@@ -1238,7 +1239,6 @@ header, .block2, footer {
     /*  mobile__block 8  */
     .block8 {
         margin-top: -173px;
-        z-index: -1;
         background: #181818;
         height: fit-content;
     }
