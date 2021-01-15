@@ -98,7 +98,7 @@ button:hover {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: "Yeseva One", Serif;
+    font-family: "Yeseva One", serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -1017,6 +1017,7 @@ header, .block2, footer {
 
     .hero {
         height: 476px;
+        padding-left: 8px;
     }
 
     .phone {
@@ -1025,7 +1026,7 @@ header, .block2, footer {
     }
 
     .hero-wrapper {
-        padding: 85px 0 0 0;
+        padding: 85px 5px 0;
     }
 
     .hero-text {
@@ -1033,11 +1034,11 @@ header, .block2, footer {
         z-index: 1;
         font-size: 13px;
         line-height: 19px;
-        width: 100%;
+        width: 95%;
     }
 
     [class^="btn-"] {
-        width: 100%;
+        width: 99%;
         margin-bottom: 20px;
         margin-right: 0;
     }
