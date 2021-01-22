@@ -25,7 +25,9 @@
                 <li class="header__menu-item"><a href="#">CONTACTS</a></li>
             </ul>
         </nav>
-        <a class="phone" href=tel:+79287683239>+7 (928) 768-32-39</a>
+        <div class="phone">
+            <a href=tel:+79287683239>+7 (928) 768-32-39</a>
+        </div>
         <button class="btn-header is_desktop">Request a call</button>
     </div>
 </header>
@@ -33,7 +35,7 @@
     <!--  section 1  -->
     <section class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-wrapper wrapper">
+        <div class="hero__wrapper wrapper">
             <h1 class="title">Turnkey Repair in the city of <span class="yelow-text">Rostov-on-Don</span></h1>
             <p class="hero-text">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and
                 20% from cost of materials due to the organization of work
@@ -99,14 +101,13 @@
                     <li class="block2__img-wrapper__menu-item"><a href="#">Rostov-on-Don Patriotic</a></li>
                 </ul>
                 <div class="block2__img-wrapper__img">
-                    <img src="images/s2_img.png" alt="room renew">
                 </div>
             </div>
         </div>
     </section>
     <!--  section 3  -->
-    <section class="block3">
-        <div class="wrapper block3__wrapper">
+    <section class="block3 wrapper">
+        <div class="block3__wrapper">
             <p class="subtitle block3_subtitle">online control</p>
             <div class="icon-holder">
                 <span class="icon icon-camera"></span>
@@ -131,7 +132,7 @@
                 <label for="form1-tel" class="form-item form1-item">Phone<br>
                     <input id="form1-tel" type="text" placeholder="Your phone number:">
                 </label>
-                <input class="btn-main form1-submit is_desktop" type="submit" value="submit">
+                <input class="btn-main form1-submit" type="submit" value="submit">
             </form>
             <div class="checkbox-wrapper">
                 <label class="label">
@@ -140,7 +141,6 @@
                     <span class="checkbox form1-checkbox">I agree to the processing of personal data</span>
                 </label>
             </div>
-            <input class="btn-main form1-submit is_mobile" type="submit" value="submit">
         </div>
     </section>
     <!--    section 4    -->
@@ -315,9 +315,9 @@
                     Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend
                     these masters.</p>
                 <div class="info mesure-text">
-                    <img class="mesure-icon" src="./images/square_icon.svg">40 M2
+                    <img class="mesure-icon" src="./images/square_icon.svg" alt="square">40 M2
                     <div class="mesure-separator"></div>
-                    <img class="mesure-icon" src="./images/calendar_icon.svg">48 days
+                    <img class="mesure-icon" src="./images/calendar_icon.svg" alt="calendar">48 days
                 </div>
             </div>
             <div class="block7__clients-item">
@@ -332,9 +332,9 @@
                     Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend
                     these masters.</p>
                 <div class="info mesure-text">
-                    <img class="mesure-icon" src="./images/square_icon.svg">90 M2
+                    <img class="mesure-icon" src="./images/square_icon.svg" alt="square">90 M2
                     <div class="mesure-separator"></div>
-                    <img class="mesure-icon" src="./images/calendar_icon.svg">128 days
+                    <img class="mesure-icon" src="./images/calendar_icon.svg" alt="calendar">128 days
                 </div>
             </div>
             <div class="block7__clients-item">
@@ -349,9 +349,9 @@
                     Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend
                     these masters.</p>
                 <div class="info mesure-text">
-                    <img class="mesure-icon" src="./images/square_icon.svg">56 M2
+                    <img class="mesure-icon" src="./images/square_icon.svg" alt="square">56 M2
                     <div class="mesure-separator"></div>
-                    <img class="mesure-icon" src="./images/calendar_icon.svg">86 days
+                    <img class="mesure-icon" src="./images/calendar_icon.svg" alt="calendar">86 days
                 </div>
             </div>
         </div>
@@ -368,7 +368,7 @@
                     <label for="form3-phone" class="form-item form3-item">Phone<br>
                         <input id="form3-phone" type="text" placeholder="Your phone number:">
                     </label>
-                    <label for="form3-question" class="form-item form3-item">Question<br>
+                    <label for="form3-question" class="form-item form3-item form3-item__question">Question<br>
                         <input id="form3-question" type="text" placeholder="I want to know:">
                     </label>
                     <label class="label form3-checkbox">
@@ -385,10 +385,10 @@
             <h2 class="block8__title yelow-text">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel
                 +7 (928) 768 32 29</h2>
             <div class="icons-holder">
-                <span class="icon-mail"><a href="mailto:#@blabla.com"><img src="./images/icon-mail.svg"></a>
+                <span class="icon-mail"><a href="mailto:#@blabla.com"><img src="./images/icon-mail.svg" alt="mail"></a>
                 </span>
                 <span class="icon-instagram"><a rel="nofollow" target="_blank" href="#"><img
-                        src="./images/icon-instagram.svg"></a>
+                        src="./images/icon-instagram.svg" alt="instagram"></a>
                 </span>
             </div>
             <iframe class="block8__map is_desktop"
@@ -413,7 +413,9 @@
                 <li class="header__menu-item"><a href="#">CONTACTS</a></li>
             </ul>
         </nav>
-        <a class="phone" href=tel:+79287683239>+7 (928) 768-32-39</a>
+        <div class="phone">
+        <a href=tel:+79287683239>+7 (928) 768-32-39</a>
+        </div>
         <button class="btn-header">Request a call</button>
     </div>
 </footer>
