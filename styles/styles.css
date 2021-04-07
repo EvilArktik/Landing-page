@@ -1151,12 +1151,21 @@ header, .block2, footer {
     .mobile-slider__wrapper {
         position: relative;
         margin: 0 auto;
+        height: 202px;
+        width: 100%;
     }
 
     .mobile-slider {
         max-width: 100%;
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         z-index: 1;
+        opacity: 0;
+    }
+
+    .mobile-slider.isActive {
+        opacity: 1;
     }
 
     .mobile-slider__buttons {
@@ -1171,6 +1180,7 @@ header, .block2, footer {
     }
 
     .mobile-slider__buttons-item {
+        cursor: pointer;
         width: 36px;
         height: 36px;
         border-radius: 50%;
