@@ -105,13 +105,14 @@ function initSlider() {
         }
     } else {
         let mobileDetails = document.querySelectorAll(".block2__text-wrapper__blocks-text");
-        let mobileImgContainer = document.querySelector(".mobile-slider__wrapper");
+        let mobileImgContainer = document.querySelector(".mobile-slider__imgs");
         let mobileArrows = document.querySelector(".mobile-slider__buttons");
 
         initMobileImages();
         initMobileArrows();
 
         function leftMobileArrowClick() {
+            console.log("click");
             let currentNum = +mobileImgContainer.querySelector(".isActive").dataset.index;
             let nextNum;
             if (currentNum === 0) {
@@ -123,6 +124,7 @@ function initSlider() {
         }
 
         function rightMobileArrowClick() {
+            console.log("click");
             let currentNum = +mobileImgContainer.querySelector(".isActive").dataset.index;
             let nextNum;
                 if (currentNum === imgs.length - 1) {
@@ -143,7 +145,6 @@ function initSlider() {
     }
 
     function initMobileArrows() {
-            console.log(mobileArrows);
         mobileArrows.querySelector(".mobile-slider__buttons-item.slide-left").addEventListener("click", leftMobileArrowClick);
         mobileArrows.querySelector(".mobile-slider__buttons-item.slide-right").addEventListener("click", rightMobileArrowClick);
     }

@@ -1189,6 +1189,7 @@ header, .block2, footer {
         background-color: #E3B873;
     }
 
+
     /*  mobile__section 3  */
     .block3 {
         background-color: #131313;
@@ -1311,6 +1312,34 @@ header, .block2, footer {
 
     .block6__mobile-title {
         margin: 55px 18px 24px;
+    }
+
+
+    .mobile-gallery__buttons {
+        display: flex;
+        width: 80%;
+        max-width: 340px;
+        justify-content: space-between;
+        position: absolute;
+        top: 42%;
+        z-index: 2;
+        padding: 0 10%;
+    }
+
+    .mobile-slider-left, .mobile-slider-right {
+        width: 20px;
+        height: 20px;
+        background-color: #E3B873;
+    }
+
+    .mobile-gallery__buttons-item {
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        z-index: 2;
+        padding: 0;
+        background-color: #E3B873;
     }
 
     /*  mobile__section 8  */
