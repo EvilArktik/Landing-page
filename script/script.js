@@ -25,6 +25,32 @@ function initSlider() {
     if (!imgs || !imgs.length) return;
     const mediaQuery = window.matchMedia("(max-width: 800px)");
 
+    function leftArrowClick(container) {
+        let currentNum = +container.querySelector(".isActive").dataset.index;
+        let nextNum;
+        if (currentNum === 0) {
+            nextNum = imgs.length - 1;
+        } else {
+            nextNum = currentNum - 1;
+        }
+        if (!mediaQuery.matches) {
+            moveSlider(nextNum);
+        } else moveMobileSlider(nextNum);
+    }
+
+    function rightArrowClick(container) {
+        let currentNum = +container.querySelector(".isActive").dataset.index;
+        let nextNum;
+        if (currentNum === imgs.length - 1) {
+            nextNum = 0;
+        } else {
+            nextNum = currentNum + 1;
+        }
+        if (!mediaQuery.matches) {
+            moveSlider(nextNum);
+        } else moveMobileSlider(nextNum);
+    }
+
     if (!mediaQuery.matches) {
         let details = document.querySelectorAll(".block2__text-wrapper__blocks-text");
         let imgContainer = document.querySelector(".block2__img-wrapper__img");
@@ -33,31 +59,10 @@ function initSlider() {
         let menu = document.querySelector(".block2__img-wrapper__menu");
 
         initImages();
-        initArrows();
+        initDesktopArrows();
         initDots();
         initMenu();
 
-        function leftArrowClick() {
-            let currentNum = +imgContainer.querySelector(".isActive").dataset.index;
-            let nextNum;
-            if (currentNum === 0) {
-                nextNum = imgs.length - 1;
-            } else {
-                nextNum = currentNum - 1;
-            }
-            moveSlider(nextNum);
-        }
-
-        function rightArrowClick() {
-            let currentNum = +imgContainer.querySelector(".isActive").dataset.index;
-            let nextNum;
-            if (currentNum === imgs.length - 1) {
-                nextNum = 0;
-            } else {
-                nextNum = currentNum + 1;
-            }
-            moveSlider(nextNum);
-        }
 
         function initImages() {
             imgs.forEach((image, index) => {
@@ -67,9 +72,9 @@ function initSlider() {
             });
         }
 
-        function initArrows() {
-            arrows.querySelector(".block2__slider-arrow.icon-arrow-left").addEventListener("click", leftArrowClick);
-            arrows.querySelector(".block2__slider-arrow.icon-arrow-right").addEventListener("click", rightArrowClick);
+        function initDesktopArrows() {
+            arrows.querySelector(".block2__slider-arrow.icon-arrow-left").addEventListener("click", () => leftArrowClick(imgContainer));
+            arrows.querySelector(".block2__slider-arrow.icon-arrow-right").addEventListener("click", () => rightArrowClick(imgContainer));
         }
 
         function moveSlider(num) {
@@ -111,31 +116,6 @@ function initSlider() {
         initMobileImages();
         initMobileArrows();
 
-        function leftMobileArrowClick() {
-            console.log("click");
-            let currentNum = +mobileImgContainer.querySelector(".isActive").dataset.index;
-            let nextNum;
-            if (currentNum === 0) {
-                nextNum = imgs.length - 1;
-            } else {
-                nextNum = currentNum - 1;
-            }
-            moveMobileSlider(nextNum);
-        }
-
-        function rightMobileArrowClick() {
-            console.log("click");
-            let currentNum = +mobileImgContainer.querySelector(".isActive").dataset.index;
-            let nextNum;
-                if (currentNum === imgs.length - 1) {
-                    nextNum = 0;
-                } else {
-                    nextNum = currentNum + 1;
-                }
-            moveMobileSlider(nextNum);
-            }
-
-
     function initMobileImages() {
         imgs.forEach((image, index) => {
             let newImg = `<img class="mobile-slider n${index} ${index === 0 ? "isActive" : ""}" src=${imgs[index].url}
@@ -145,8 +125,8 @@ function initSlider() {
     }
 
     function initMobileArrows() {
-        mobileArrows.querySelector(".mobile-slider__buttons-item.slide-left").addEventListener("click", leftMobileArrowClick);
-        mobileArrows.querySelector(".mobile-slider__buttons-item.slide-right").addEventListener("click", rightMobileArrowClick);
+        mobileArrows.querySelector(".mobile-slider__buttons-item.slide-left").addEventListener("click", () => leftArrowClick(mobileImgContainer));
+        mobileArrows.querySelector(".mobile-slider__buttons-item.slide-right").addEventListener("click", () => rightArrowClick(mobileImgContainer));
     }
 
     function moveMobileSlider(num) {
