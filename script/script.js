@@ -21,6 +21,17 @@ let imgs = [{
     alt: "Picture of Rostov-on-Don Patriotic project"
 }];
 
+let details = document.querySelectorAll(".block2__text-wrapper__blocks-text");
+let imgContainer = document.querySelector(".block2__img-wrapper__img");
+let arrows = document.querySelector(".block2__slider");
+let dots = document.querySelector(".block2__slider-dots");
+let menu = document.querySelector(".block2__img-wrapper__menu");
+
+let mobileDetails = document.querySelectorAll(".block2__text-wrapper__blocks-text");
+let mobileImgContainer = document.querySelector(".mobile-slider__imgs");
+let mobileArrows = document.querySelector(".mobile-slider__buttons");
+
+
 function initSlider() {
     if (!imgs || !imgs.length) return;
     const mediaQuery = window.matchMedia("(max-width: 800px)");
@@ -51,70 +62,50 @@ function initSlider() {
         } else moveMobileSlider(nextNum);
     }
 
-    if (!mediaQuery.matches) {
-        let details = document.querySelectorAll(".block2__text-wrapper__blocks-text");
-        let imgContainer = document.querySelector(".block2__img-wrapper__img");
-        let arrows = document.querySelector(".block2__slider");
-        let dots = document.querySelector(".block2__slider-dots");
-        let menu = document.querySelector(".block2__img-wrapper__menu");
-
-        initImages();
-        initDesktopArrows();
-        initDots();
-        initMenu();
-
-
-        function initImages() {
-            imgs.forEach((image, index) => {
-                let newImg = `<img class="img n${index} ${index === 0 ? "isActive" : ""}" src=${imgs[index].url} 
+    function initImages() {
+        imgs.forEach((image, index) => {
+            let newImg = `<img class="img n${index} ${index === 0 ? "isActive" : ""}" src=${imgs[index].url} 
                                 alt="${imgs[index].alt}" data-index="${index}">`;
-                imgContainer.innerHTML += newImg;
-            });
-        }
+            imgContainer.innerHTML += newImg;
+        });
+    }
 
-        function initDesktopArrows() {
-            arrows.querySelector(".block2__slider-arrow.icon-arrow-left").addEventListener("click", () => leftArrowClick(imgContainer));
-            arrows.querySelector(".block2__slider-arrow.icon-arrow-right").addEventListener("click", () => rightArrowClick(imgContainer));
-        }
+    function initDesktopArrows() {
+        arrows.querySelector(".block2__slider-arrow.icon-arrow-left").addEventListener("click", () => leftArrowClick(imgContainer));
+        arrows.querySelector(".block2__slider-arrow.icon-arrow-right").addEventListener("click", () => rightArrowClick(imgContainer));
+    }
 
-        function moveSlider(num) {
-            imgContainer.querySelector(".isActive").classList.remove("isActive");
-            imgContainer.querySelector(`.n${num}`).classList.add("isActive");
-            dots.querySelector(".isActive").classList.remove("isActive");
-            dots.querySelector(".n" + num).classList.add("isActive");
-            menu.querySelector(".isActive").classList.remove("isActive");
-            menu.querySelector(".n" + num).classList.add("isActive");
-            details[0].innerHTML = imgs[num].city;
-            details[1].innerHTML = imgs[num].area;
-            details[2].innerHTML = imgs[num].time;
-        }
+    function moveSlider(num) {
+        imgContainer.querySelector(".isActive").classList.remove("isActive");
+        imgContainer.querySelector(`.n${num}`).classList.add("isActive");
+        dots.querySelector(".isActive").classList.remove("isActive");
+        dots.querySelector(".n" + num).classList.add("isActive");
+        menu.querySelector(".isActive").classList.remove("isActive");
+        menu.querySelector(".n" + num).classList.add("isActive");
+        details[0].innerHTML = imgs[num].city;
+        details[1].innerHTML = imgs[num].area;
+        details[2].innerHTML = imgs[num].time;
+    }
 
-        function initDots() {
-            imgs.forEach((image, index) => {
-                let dot = `<span class="block2__slider-item n${index} ${index === 0 ? "isActive" : ""}" data-index="${index}"></span>`;
-                dots.innerHTML += dot;
-            });
-            dots.querySelectorAll(".block2__slider-item").forEach(dot => {
-                dot.addEventListener("click", () => {
-                    moveSlider(dot.dataset.index);
-                })
+    function initDots() {
+        imgs.forEach((image, index) => {
+            let dot = `<span class="block2__slider-item n${index} ${index === 0 ? "isActive" : ""}" data-index="${index}"></span>`;
+            dots.innerHTML += dot;
+        });
+        dots.querySelectorAll(".block2__slider-item").forEach(dot => {
+            dot.addEventListener("click", () => {
+                moveSlider(dot.dataset.index);
             })
-        }
+        })
+    }
 
-        function initMenu() {
-            menu.querySelectorAll(".block2__img-wrapper__menu-item").forEach(link => {
-                link.addEventListener("click", () => {
-                    moveSlider(link.dataset.index);
-                })
+    function initMenu() {
+        menu.querySelectorAll(".block2__img-wrapper__menu-item").forEach(link => {
+            link.addEventListener("click", () => {
+                moveSlider(link.dataset.index);
             })
-        }
-    } else {
-        let mobileDetails = document.querySelectorAll(".block2__text-wrapper__blocks-text");
-        let mobileImgContainer = document.querySelector(".mobile-slider__imgs");
-        let mobileArrows = document.querySelector(".mobile-slider__buttons");
-
-        initMobileImages();
-        initMobileArrows();
+        })
+    }
 
     function initMobileImages() {
         imgs.forEach((image, index) => {
@@ -136,6 +127,16 @@ function initSlider() {
         mobileDetails[1].innerHTML = imgs[num].area;
         mobileDetails[2].innerHTML = imgs[num].time;
     }
+
+
+    if (!mediaQuery.matches) {
+        initImages();
+        initDesktopArrows();
+        initDots();
+        initMenu();
+    } else {
+        initMobileImages();
+        initMobileArrows();
 }
 }
 
